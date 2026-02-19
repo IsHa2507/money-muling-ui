@@ -1,9 +1,8 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import Lottie from "lottie-react"; // optional for json animation
 import Card from "./Card"; 
 import Button from "./ui/Button";
-// 👉 example import (use later)
+import animationData from "../assets/jsonfiles/brainstorm.json";
 // import fraudAnimation from "@/assets/fraud.json";
 
 const AboutAI = () => {
@@ -34,6 +33,7 @@ const AboutAI = () => {
             <Card
               title="Explainable AI"
               desc="Our transparent models offer insights into how decisions are made giving your workflows control and accountability."
+              animationData={animationData}
             />
           </div>
 
